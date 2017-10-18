@@ -17,7 +17,7 @@ class my_range_iterator:
   def __iter__(self):
     return self
 
-  def next(self):
+  def __next__(self):
       try:
         i = next(self.iterator)
         while (0 != i % 2):
