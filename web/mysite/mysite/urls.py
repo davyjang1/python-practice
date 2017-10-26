@@ -21,8 +21,3 @@ urlpatterns = [
     url(r'^blog/', include('jdh_blog.urls')),
 ]
 
-#urlpatterns = patterns('',
-#    (r'^blog/', include('jdh_blog.urls')),
-#    (r'^admin/', include(admin.site.urls)),
-#)
-
