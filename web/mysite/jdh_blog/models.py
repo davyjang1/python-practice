@@ -1,4 +1,5 @@
 from django.db import models
+from django import forms
 
 # Create your models here.
 
@@ -7,3 +8,7 @@ class BlogPost(models.Model):
     body = models.TextField()
     timestamp = models.DateTimeField()
 
+class BlogPostForm(forms.ModelForm):
+    class Meta:
+        model = BlogPost
+        exclude = ('timestamp',)
