@@ -1,3 +1,5 @@
+#!/usr/bin/python3
+
 from threading import Thread
 from queue import Queue
 from math import floor
